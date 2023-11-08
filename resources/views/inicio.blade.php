@@ -15,61 +15,23 @@
     <a class="nav-link active" aria-current="page" href="#">INICIO</a>
     </div>
     <div class="col">
-    <a class="nav-link dropdown-toggle" href="{{route("arriendo")}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             ARRIENDO
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="#">APARTAMENTO</a></li>
             <li><a class="dropdown-item" href="#">CASA</a></li>
           </ul>
-    </div>
-    <div class="col">
-      One of three columns
     </div>
   </div>
 </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            ARRIENDO
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">APARTAMENTO</a></li>
-            <li><a class="dropdown-item" href="#">CASA</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="{{route("venta")}}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            VENTA
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">APARTAMENTO</a></li>
-            <li><a class="dropdown-item" href="#">CASA</a></li>
-          </ul>
-        </li>
-      </ul>
       <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="BUSCAR">
         <button class="btn btn-outline-success" type="submit">BUSCAR</button>
       </form>
     </div>
   </div>
-  
-  <div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInput" placeholder="Usuario">
-</div>
-<div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
-</div>
-  <select class="form-select" aria-label="Default select example">
-  <option selected>FILTRO</option>
-  <option value="1">Arriendo</option>
-  <option value="2">Venta</option>
-</select>
 </nav>
 
 <div id="carouselExample" class="carousel slide">
@@ -114,7 +76,19 @@
         </div>
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="img/apto_estudio_png" class="card-img-top" alt="...">
+                <img src="img/apto_cañaveral.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Apartamento</h5>
+                    <p class="card-text">2 habitaciones</p>
+                    <p class="card-text">1 Baño</p>
+                    <p class="card-text">1 parqueadero</p>
+                    <a href="#" class="btn btn-primary">INFORMACION</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/apto_cañaveral.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Apartamento</h5>
                     <p class="card-text">2 habitaciones</p>
@@ -131,7 +105,7 @@
     <div class="row">
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="img/apto_alarcon.jpg" class="card-img-top" alt="...">
+                <img src="img/casa_club_house.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">CASA</h5>
                     <p class="card-text">4 Habitacion</p>
@@ -142,7 +116,7 @@
         </div>
         <div class="col">
             <div class="card" style="width: 18rem;">
-                <img src="img/apto_estudio_png" class="card-img-top" alt="...">
+                <img src="img/apto_estudio_cañaveral.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Apartamento</h5>
                     <p class="card-text">3 habitaciones</p>
@@ -152,15 +126,20 @@
                 </div>
             </div>
         </div>
+        <div class="col">
+            <div class="card" style="width: 18rem;">
+                <img src="img/apto_cañaveral.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Apartamento</h5>
+                    <p class="card-text">2 habitaciones</p>
+                    <p class="card-text">1 Baño</p>
+                    <p class="card-text">1 parqueadero</p>
+                    <a href="#" class="btn btn-primary">INFORMACION</a>
+                </div>
+            </div>
+        </div>
 
-        <div class="mb-3">
-  <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-</div>
-<div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-</div>
+        
 
 <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
   <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
