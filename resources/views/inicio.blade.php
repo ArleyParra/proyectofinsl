@@ -79,7 +79,7 @@
                     <h5 class="card-title">Apartaestudio</h5>
                     <p class="card-text">1 Habitacion</p>
                     <p class="card-text">1 baño</p>
-                    <a href="{{("detalle")}}" class="btn btn-primary">INFORMACION</a>
+                    <a href="#" class="btn btn-primary">INFORMACION</a>
                 </div>
             </div>
         </div>
