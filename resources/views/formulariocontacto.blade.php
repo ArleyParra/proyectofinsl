@@ -39,38 +39,98 @@
       </form>
     </div>
   </div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Interés</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-<div class="container text-center">
-  <div class="row">
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-    <div class="col">
-      Column
-    </div>
-  </div>
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<?php
+// Procesar el formulario cuando se envíe
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Recoger los datos del formulario
+    $nombre = $_POST["nombre"];
+    $celular = $_POST["celular"];
+    $interes = $_POST["interes"];
+
+    // Aquí puedes realizar acciones con los datos, como almacenarlos en una base de datos o enviar un correo electrónico
+
+    // Por ahora, solo mostramos un mensaje de confirmación
+    echo "<p style='text-align: center;'>Gracias, $nombre, nos pondremos en contacto contigo pronto. Tu número de celular es: $celular. Estás interesado en: $interes.</p>";
+}
+?>
+
+<div>
+    <h2>Formulario de Interés</h2>
+
+    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label for="celular">Número de Celular:</label>
+        <input type="text" name="celular" pattern="[0-9]+" required>
+
+        <label for="interes">Interesado en:</label>
+        <textarea name="interes" rows="4" required></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
 </div>
 
-<div id="carouselExampleIndicators" class="carousel slide">
-    </div>
-
-    <h1 class="text-center m-5"> Inmuebles </h1>
-
-    <div class="container text-center">
-
-
-        <img src="img/apto_alarcon.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Apartamento</h5>
-            <p class="card-text">Hermoso apartamento con acondicionado</p>
-            <p class="card-text">una habitacion, sala comedor, cocina integral y un baño</p>
-            <p class="card-text">no cuenta con parquedaro</p>
-            <a href="#" class="btn btn-primary">CONTACTO</a>
-        </div>
-
+</body>
+</html>
 
     </div>
     <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
