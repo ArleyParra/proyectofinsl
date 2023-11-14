@@ -27,17 +27,4 @@ Route::get('/arriendo',[ArriendoController::class,'listArriendo'])->name("arrien
 Route::get('/venta', [VentaController::class,'listArriendo'])->name("venta");
 Route::get('/quienes_somos', [QuienesSomosController::class,'listQuienesSomos'])->name("quienessomos");
 
-Route::get('productos', [ProductController::class,'listProducts']);
-Route::get('detalle', [DetalleController::class,'listDetalle']);
 
-Route::get('productos/create', function (){
-    return "AQUI VA A ESTAR EL FORMULARIO DE LA CREACIÓN DE PRODUCTOS";
-});
-
-Route::get('productos/{id}', function ($id){
-    return "el nombre del producto es $id";
-});
-
-Route::get('productos/{id}/{categoria}', function ($id, $categoria){
-    return "el nombre del producto es $id con la categoria $categoria";
-});
