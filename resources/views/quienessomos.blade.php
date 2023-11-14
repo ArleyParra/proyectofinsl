@@ -71,11 +71,19 @@
     <div class="col">
       MISION
     </div>
+    <div class="contenido">
+    En nuestra inmobiliaria, nos comprometemos a ofrecer servicios de excelencia a nuestros clientes, 
+    brindando asesoramiento profesional, transparencia y dedicación en cada transacción inmobiliaria. Buscamos superar las expectativas, 
+    facilitando la adquisición, venta o alquiler de propiedades, con un enfoque centrado en las necesidades individuales de cada cliente 
+    y contribuyendo así al logro de sus sueños y metas inmobiliarias.
+    </div>
     <div class="col">
       VISION
     </div>
-    <div class="col">
-      CONTACTO
+    <div class="contenido">
+    Nos visualizamos como la inmobiliaria líder en nuestro mercado, reconocida por nuestra integridad, ética profesional y compromiso con la satisfacción del cliente.
+     Buscamos innovar constantemente, utilizando tecnologías emergentes y estrategias vanguardistas para mejorar la experiencia inmobiliaria. Aspiramos a ser referentes en la industria, 
+     manteniendo altos estándares de calidad y siendo un punto de apoyo confiable para aquellos que buscan realizar transacciones inmobiliarias exitosas y satisfactorias.
     </div>
   </div>
 </div>
