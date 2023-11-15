@@ -12,15 +12,15 @@
     <div class="container text-center">
   <div class="row align-items-start">
     <div class="col">
-    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
+    <a class="nav-link active" aria-current="page" href="{{("inicio")}}">INICIO</a>
     </div>
     <div class="col">
-    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <a class="nav-link dropdown-toggle" href="{{ route('arriendo') }}" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             ARRIENDO
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">APARTAMENTO</a></li>
-            <li><a class="dropdown-item" href="#">CASA</a></li>
+            <li><a class="dropdown-item" href="">APARTAMENTO</a></li>
+            <li><a class="dropdown-item" href="">CASA</a></li>
           </ul>
     </div>
     <div class="col">
@@ -40,6 +40,7 @@
         <button class="btn btn-outline-success" type="submit">BUSCAR</button>
       </form>
     </div>
+    <button class="btn btn-outline-success" type="submit">LOGIN</button>
   </div>
 </nav>
 
@@ -164,7 +165,7 @@
         <ul class="list-unstyled">
           <li class="mb-2"><a href="#">ARRIENDO</a></li>
           <li class="mb-2"><a href="#">VENTA</a></li>
-          <li class="mb-2"><a href="#">QUIENES SOMOS</a></li>
+          <li class="mb-2"><a href="{{("quienessomos")}}">QUIENES SOMOS</a></li>
          </ul>
       </div>
 

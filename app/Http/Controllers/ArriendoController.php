@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ArriendoController extends Controller
 {
-    function listArriendo(){
+    public function listArriendo(){
         return view("arriendo");
     }
 }

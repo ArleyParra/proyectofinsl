@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('content')
+@section('formulario')
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
   <a class="navbar-brand" href="#">
@@ -39,7 +39,7 @@
       </form>
     </div>
   </div>
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">

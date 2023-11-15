@@ -20,11 +20,12 @@ use App\Http\Controllers\VentaController;
 |
 */
 
-Route::get('/', [InicioController::class,'listInicio'])->name("inicio");
-Route::get('/detalles_inmuebles', [DetallesInmueblesController::class,'listDetallesInmuebles'])->name("detalles");
+Route::get('/', [InicioController::class,'listInicio'])->name('inicio');
+Route::get('/detalles_inmuebles', [DetallesInmueblesController::class,'listDetallesInmuebles'])->name('detalles');
 Route::get('/formulario_contacto', [FormularioContactoController::class,'listFormularioContacto']);
-Route::get('/arriendo',[ArriendoController::class,'listArriendo'])->name("arriendo");
-Route::get('/venta', [VentaController::class,'listArriendo'])->name("venta");
-Route::get('/quienes_somos', [QuienesSomosController::class,'listQuienesSomos'])->name("quienessomos");
+Route::get('arriendo',[ArriendoController::class,'listArriendo'])->name('arriendo');
+Route::get('prueba', [InicioController::class, "pruebaPage"])->name('prueba');
+Route::get('venta', [VentaController::class,'listArriendo'])->name('venta');
+Route::get('/quienes_somos', [QuienesSomosController::class,'listQuienesSomos'])->name('quienessomos');
 
 

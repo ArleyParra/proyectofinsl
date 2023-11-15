@@ -1,4 +1,4 @@
-@extends('layout.main')
+@extends('layout.quienes_somos')
 
 @section('content')
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
